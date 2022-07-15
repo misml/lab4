@@ -15,4 +15,10 @@ case "$1" in
 					done
 			fi
 			;;
+	--help) echo "Dostepne opcje:"
+			echo
+			echo "--data"
+			echo "--logs"
+			echo "--logs 30"
+			echo "--help";;
 esac
