@@ -1,7 +1,7 @@
 #!/bin/bash 
 case "$1" in
-	--data) echo "dzisiejsza data to: $(date)";;
-	--logs) if [ "$2" == "30" ]
+	--data|-d) echo "dzisiejsza data to: $(date)";;
+	--logs|-l) if [ "$2" == "30" ]
 				then
 				for (( c=1; c<=$2; c++))
 					do 
@@ -15,7 +15,7 @@ case "$1" in
 					done
 			fi
 			;;
-	--help) echo "Dostepne opcje:"
+	--help|-h) echo "Dostepne opcje:"
 			echo
 			echo "--data"
 			echo "--logs"
